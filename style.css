@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+}
+
+:root {
+    --font-family: "Vetrino", sans-serif;
+    --second-family: "Yantramanav", sans-serif;
+    --third-family: "Voces", sans-serif;
+}
+
+.container {
+    max-width: 1350px;
+}
+
+.search_avia {
+    background: url(/images/background_plane.jpg);
+    align-items: center;
+    background-blend-mode: multiply;
+    height: 800px;
+    mix-blend-mode: screen;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/plane.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.images__2 {
+    background-image: url(/images/plane.svg);
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__txt {
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    font-family: var(--third-family);
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lk {}
+
+li {
+    margin: 0;
+    padding-right: 5px;
+}
+
+.stroke_search {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.kuda {}
+
+.search-form {
+    border: 1px solid black;
+    display: inline-flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.search-form__txt {
+    border: none;
+    width: 150px;
+    outline: none;
+    font-size: 20px;
+    width: 203px;
+    height: 60px;
+}
+
+.search-form__btn {
+    border: none;
+}
+
+.search-form__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_form-shape1 {
+    border-radius: 10px 0 0 10px;
+    width: 203px;
+    height: 60px;
+}
+
+.search_form-shape2 {
+    border-radius: 0 10px 10px 0;
+    width: 203px;
+    height: 60px;
+}
+
+.button {
+    border-radius: 10px;
+    width: 204px;
+    height: 60px;
+    background-color: #D83434
+}
+
+.image__section {
+    position: relative;
+}
+
+.otkuda {}
+
+.kogda {}
+
+.obratno {}
+
+.kol-vo_chelovek {}
+
+.button_search {}
+
+.where_to_go {}
+
+.main_txt {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+    color: #248dda;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.places {}
+.image__txt{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+}
+.places_images {
+    border-radius: 71px;
+    width: 507px;
+    height: 500px;
+    margin-bottom: 318px;
+}
+.under-picture-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    margin: 0;
+}
+.placehholder{
+    margin: 0 ;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prepare_to_fly {
+    background-image: url(/images/prepare_to_flight.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo__prepare_to_fly {
+    text-align: center;
+    padding-top: 150px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.reminders {
+    display: flex;
+}
+
+.reminders__txt__logo {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.reminders__txt {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.first_reminder {
+    border-radius: 71px;
+    width: 507px;
+    height: 272px;
+    background: rgba(175, 218, 243, 0.55);
+}
+
+.second_reminder {
+    border-radius: 71px;
+    width: 507px;
+    height: 272px;
+    background: rgba(175, 218, 243, 0.55);
+}
+
+.third_reminder {}
+
+.fourth_reminder {}
+
+.footer {}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+}

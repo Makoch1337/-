@@ -24,7 +24,7 @@
             </div>
             <div>
                 <ul class="stroke_search">
-                    <img src="/images/plane.svg" alt="" class="images__2">
+                    <!-- <img src="static/images/plane.svg" alt="" class="images__2"> -->
                     <li class="kuda">
                         <div class="search_form">
                             <input type="text" name="" class="search-form__txt search_form-shape1" placeholder="">

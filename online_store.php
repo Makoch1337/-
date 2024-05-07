@@ -71,6 +71,7 @@
                         </div>
                         <img src="static/images/image 1.png" alt="First Image">
                         <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун, был главным королевским дворцом династии Чосон. </p>
+                        <button>Купить</button>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
@@ -79,6 +80,7 @@
                         </div>
                     <img src="static/images/image 3.png" alt="Second Image">
                     <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного уровня в Республике Корея. </p>
+                        <button>Купить</button>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
@@ -87,6 +89,7 @@
                         </div>
                         <img src="static/images/image 2.png" alt="Third Image">
                         <p class="image__txt">Каждую весну здесь проводится Фестиваль фонарей в честь дня рождения Будды. </p>
+                        <button>Купить</button>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
@@ -95,6 +98,7 @@
                         </div>
                         <img src="static/images/image 4.png" alt="Fourth Image">
                         <p class="image__txt">Популярный парк развлечений Lotte World  разделен на крытый тематический парк и открытый тематический парк .</p>
+                        <button>Купить</button>
                     </div>
                 </div>
             </div>

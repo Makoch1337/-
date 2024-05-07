@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Скоро новый год!</title>
+		<title>Скоро отлет!</title>
 		<script src="static/js/jquery-3.4.1.min.js"></script>
 		<script src="static/js/script.js"></script>
 		<link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
 	<body>
 		<div class="vein"></div>
 		<div class="container main timer-main">
-			<span class="title">До нового года осталось:</span>
+			<span class="title">До отлета осталось:</span>
 			<div id="timer" class="timer">
 				<div>
 					<span class="days"></span>

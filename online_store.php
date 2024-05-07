@@ -13,18 +13,18 @@
         <div class="container">
             <div class="header_menu">
                 <div class="logo">
-                    <img src="/images/img_logo.svg" alt="LogoHiKorea">
+                    <img src="static/images/img_logo.svg" alt="LogoHiKorea">
                     <p class="logo__txt">HiKorea</p>
                 </div>
                 <div class="lk">
-                    <img src="/images/lk_logo.svg" alt="LkLogo">
+                    <img src="static/images/lk_logo.svg" alt="LkLogo">
                 </div>
             </div>
             <div class="images__2">
             </div>
             <div>
                 <ul class="stroke_search">
-                    <!-- <img src="/images/plane.svg" alt="" class="images__2"> -->
+                    <img src="/images/plane.svg" alt="" class="images__2">
                     <li class="kuda">
                         <div class="search_form">
                             <input type="text" name="" class="search-form__txt search_form-shape1" placeholder="">
@@ -66,34 +66,34 @@
                 <div class="pictures">
                     <div class="places_images">
                         <div class="under-picture-txt">
-                            <img src="/images/placeholder.svg" alt="" class="placehholder">
+                            <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>SEOUL</h4>
                         </div>
-                        <img src="/images/image 1.png" alt="First Image">
+                        <img src="static/images/image 1.png" alt="First Image">
                         <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун , был главным королевским дворцом династии Чосон. </p>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
-                            <img src="/images/placeholder.svg" alt="" class="placehholder">
+                            <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>GANGWON-DO</h4>
                         </div>
-                    <img src="/images/image 3.png" alt="Second Image">
+                    <img src="static/images/image 3.png" alt="Second Image">
                     <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного уровня в Республике Корея. </p>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
-                            <img src="/images/placeholder.svg" alt="" class="placehholder">
+                            <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>BUSAN</h4>
                         </div>
-                        <img src="/images/image 2.png" alt="Third Image">
+                        <img src="static/images/image 2.png" alt="Third Image">
                         <p class="image__txt">Каждую весну здесь проводится Фестиваль фонарей в честь дня рождения Будды. </p>
                     </div>
                     <div class="places_images">
                         <div class="under-picture-txt">
-                            <img src="/images/placeholder.svg" alt="" class="placehholder">
+                            <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>SEOUL</h4>
                         </div>
-                        <img src="/images/image 4.png" alt="Fourth Image">
+                        <img src="static/images/image 4.png" alt="Fourth Image">
                         <p class="image__txt">Популярный парк развлечений Lotte World  разделен на крытый тематический парк и открытый тематический парк .</p>
                     </div>
                 </div>

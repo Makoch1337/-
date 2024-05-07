@@ -38,8 +38,8 @@ $currentDateArray = explode('.', $currentDate);
 $currentMounth = $currentDateArray[0];
 $currentDay = $currentDateArray[1];
 
-//$currentMounth = 12;
-//$currentDay = 24;
+$currentMounth = 12;
+$currentDay = 24;
 
 if ($currentMounth == 12 && $currentDay >= 24) {
 	$PDO = PdoConnect::getInstance();

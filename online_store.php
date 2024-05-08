@@ -78,8 +78,8 @@
                             <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>GANGWON-DO</h4>
                         </div>
-                    <img src="static/images/image 3.png" alt="Second Image">
-                    <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного уровня в Республике Корея. </p>
+                        <img src="static/images/image 3.png" alt="Second Image">
+                        <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного уровня в Республике Корея. </p>
                         <button>Купить</button>
                     </div>
                     <div class="places_images">

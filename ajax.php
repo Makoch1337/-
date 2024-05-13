@@ -13,8 +13,8 @@ if (
 
     $errors = array();
 
-    if (!$requestData['id'])
-        $errors[] = 'Не получен ID товара';
+    // if (!$requestData['id'])
+    //     $errors[] = 'Не получен ID товара';
 
     if (!$requestData['fio'])
         $errors[] = 'Поле "Ваше имя" обязательно для заполнения';

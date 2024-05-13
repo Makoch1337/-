@@ -1,10 +1,11 @@
 <?php
 
 spl_autoload_register(function ($class) {
-    include 'classes/' . $class . '.php';
+	include 'classes/' . $class . '.php';
 });
 
-function secondToDate($mounth, $day) {
+function secondToDate($mounth, $day)
+{
 
 	$currentDate = date('Y.m.d.H.i.s', time());
 	$currentDateArray = explode('.', $currentDate);
@@ -22,12 +23,12 @@ function secondToDate($mounth, $day) {
 
 	$diff = date_diff($dateTo, $dateFrom);
 
-	return  ($diff->y * 365 * 24 * 60 * 60) +
-			($diff->m * 30 * 24 * 60 * 60) +
-			($diff->d * 24 * 60 * 60) +
-			($diff->h * 60 * 60) +
-			($diff->i * 60) +
-			$diff->s;
+	return ($diff->y * 365 * 24 * 60 * 60) +
+		($diff->m * 30 * 24 * 60 * 60) +
+		($diff->d * 24 * 60 * 60) +
+		($diff->h * 60 * 60) +
+		($diff->i * 60) +
+		$diff->s;
 }
 
 $secondTo = secondToDate(12, 24);
@@ -41,12 +42,13 @@ $currentDay = $currentDateArray[1];
 $currentMounth = 12;
 $currentDay = 24;
 
+
 if ($currentMounth == 12 && $currentDay >= 24) {
 	$PDO = PdoConnect::getInstance();
 
-	$result = $PDO->PDO->query("
-		SELECT * FROM `goods`
-	");
+	$result = $PDO->PDO->query('
+	SELECT * FROM `goods`
+	');
 
 	$products = array();
 
@@ -54,9 +56,9 @@ if ($currentMounth == 12 && $currentDay >= 24) {
 		$products[] = $productInfo;
 	}
 
-    var_dump($products);
+	var_dump($products);
 
-    include 'online_store.php';
+	include 'online_store.php';
 } else {
 	include 'timer.php';
 }

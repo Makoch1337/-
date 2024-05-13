@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/slick.js"></script>
+    <script src="static/js/script.js"></script>
+    <link rel="stylesheet" href="static/style.css">
     <title>HiKorea</title>
 </head>
 
@@ -24,7 +27,7 @@
             </div>
             <div>
                 <ul class="stroke_search">
-                    <!-- <img src="static/images/plane.svg" alt="" class="images__2"> -->
+                    <!-- <img src="/images/plane.svg" alt="" class="images__2"> -->
                     <li class="kuda">
                         <div class="search_form">
                             <input type="text" name="" class="search-form__txt search_form-shape1" placeholder="">
@@ -64,20 +67,20 @@
             </div>
             <div class="places">
                 <div class="pictures">
-                    <div class="places_images">
+                    <div class="places_images" data-id="1">
                         <div class="under-picture-txt">
                             <img src="static/images/placeholder.svg" alt="" class="placehholder">
                             <h4>SEOUL</h4>
                         </div>
                         <img src="static/images/image 1.png" alt="First Image">
-                        <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун, был главным королевским дворцом династии Чосон. </p>
+                        <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун , был главным
+                            королевским дворцом династии Чосон. </p>
                         <div class="css-modal-details">
                             <details>
                                 <summary>Купить</summary>
                                 <div class="cmc">
                                     <div class="cmt">
-                                        <h3>Оформление заказа</h3><i
-                                            class="fas fa-times close-popup js_close-popup"></i>
+                                        <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
                                         <div class='js_error'></div>
                                         <input type="hidden" name="product-id">
                                         <input type="text" name="fio" placeholder="Ваше имя">
@@ -96,14 +99,14 @@
                             <h4>GANGWON-DO</h4>
                         </div>
                         <img src="static/images/image 3.png" alt="Second Image">
-                        <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного уровня в Республике Корея. </p>
+                        <p class="image__txt">Курорт Альпензия это один из двух горнолыжных курортов международного
+                            уровня в Республике Корея. </p>
                         <div class="css-modal-details">
                             <details>
                                 <summary>Купить</summary>
                                 <div class="cmc">
                                     <div class="cmt">
-                                        <h3>Оформление заказа</h3><i
-                                            class="fas fa-times close-popup js_close-popup"></i>
+                                        <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
                                         <div class='js_error'></div>
                                         <input type="hidden" name="product-id">
                                         <input type="text" name="fio" placeholder="Ваше имя">
@@ -122,14 +125,14 @@
                             <h4>BUSAN</h4>
                         </div>
                         <img src="static/images/image 2.png" alt="Third Image">
-                        <p class="image__txt">Каждую весну здесь проводится Фестиваль фонарей в честь дня рождения Будды. </p>
+                        <p class="image__txt">Каждую весну здесь проводится Фестиваль фонарей в честь дня рождения
+                            Будды. </p>
                         <div class="css-modal-details">
                             <details>
                                 <summary>Купить</summary>
                                 <div class="cmc">
                                     <div class="cmt">
-                                        <h3>Оформление заказа</h3><i
-                                            class="fas fa-times close-popup js_close-popup"></i>
+                                        <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
                                         <div class='js_error'></div>
                                         <input type="hidden" name="product-id">
                                         <input type="text" name="fio" placeholder="Ваше имя">
@@ -148,14 +151,14 @@
                             <h4>SEOUL</h4>
                         </div>
                         <img src="static/images/image 4.png" alt="Fourth Image">
-                        <p class="image__txt">Популярный парк развлечений Lotte World  разделен на крытый тематический парк и открытый тематический парк .</p>
+                        <p class="image__txt">Популярный парк развлечений Lotte World  разделен на крытый тематический
+                            парк и открытый тематический парк .</p>
                         <div class="css-modal-details">
                             <details>
                                 <summary>Купить</summary>
                                 <div class="cmc">
                                     <div class="cmt">
-                                        <h3>Оформление заказа</h3><i
-                                            class="fas fa-times close-popup js_close-popup"></i>
+                                        <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
                                         <div class='js_error'></div>
                                         <input type="hidden" name="product-id">
                                         <input type="text" name="fio" placeholder="Ваше имя">
@@ -180,11 +183,14 @@
             <div class="reminders">
                 <div class="first_reminder">
                     <p class="reminders__txt__logo"> Возврат и обмен билетов</p>
-                    <p class="reminders__txt">Размеры, стоимость и правила перевозки ручной клади и багажа, подробная информация о перевесе багажа</p>
+                    <p class="reminders__txt">Размеры, стоимость и правила перевозки ручной клади и багажа, подробная
+                        информация о перевесе багажа</p>
                 </div>
                 <div class="second_reminder">
                     <p class="reminders__txt__logo"> Ручная кладь и багаж </p>
-                    <p class="reminders__txt">Есть ряд случаев, когда возврат считается вынужденным, и после подтверждения причин возврата вам вернут деньги. Обмен билетов не допускается за исключением некоторых изменений</p>
+                    <p class="reminders__txt">Есть ряд случаев, когда возврат считается вынужденным, и после
+                        подтверждения причин возврата вам вернут деньги. Обмен билетов не допускается за исключением
+                        некоторых изменений</p>
                 </div>
             </div>
         </div>
@@ -202,7 +208,7 @@
                 <p>whatsapp</p>
             </div>
         </div>
-    </footer>
+    </footer>ы
 </body>
 
 </html>

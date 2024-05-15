@@ -42,21 +42,18 @@ $currentDay = $currentDateArray[1];
 $currentMounth = 12;
 $currentDay = 24;
 
-
 if ($currentMounth == 12 && $currentDay >= 24) {
 	$PDO = PdoConnect::getInstance();
 
-	$result = $PDO->PDO->query('
-	SELECT * FROM `goods`
-	');
+	$result = $PDO->PDO->query("
+		SELECT * FROM `goods`
+	");
 
 	$products = array();
 
 	while ($productInfo = $result->fetch()) {
 		$products[] = $productInfo;
 	}
-
-	var_dump($products);
 
 	include 'online_store.php';
 } else {

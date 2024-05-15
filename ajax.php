@@ -13,8 +13,8 @@ if (
 
     $errors = array();
 
-    // if (!$requestData['id'])
-    //     $errors[] = 'Не получен ID товара';
+    if (!$requestData['id'])
+        $errors[] = 'Не получен ID товара';
 
     if (!$requestData['fio'])
         $errors[] = 'Поле "Ваше имя" обязательно для заполнения';
@@ -39,7 +39,7 @@ if (
 				Оформлен новый заказ.
 				Заказан товар с ID:" . $requestData['id'] . ", заказчик " . $requestData['fio'];
 
-            mail('keyn-artur@yandex.ru', 'Оформлен новый заказ', $message, 'FROM: admin@happynewyear.mydev');
+            mail('maxim.ko4@mail.ru', 'Оформлен новый заказ', $message, 'FROM: admin@happynewyear.mydev');
         }
     }
 

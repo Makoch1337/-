@@ -76,7 +76,7 @@ wideMenu = {
     },
 };
 
-aviasales = {
+happyNewYear = {
     showPopup: (param, element) => {
 
         let main_element = $('.popup'),
@@ -97,7 +97,7 @@ aviasales = {
 
     sendOrder: () => {
 
-        let url = '/ajax.php',
+        let url = '../../ajax.php',
             data = {
                 'id': $('[name=product-id]').val(),
                 'fio': $('[name=fio]').val(),
@@ -108,7 +108,7 @@ aviasales = {
 
         $.ajax({
             url: url,
-            type: "POST",
+            method: 'post',
             data: data,
             dataType: 'json',
             success: (response) => {
@@ -207,7 +207,7 @@ $(window).resize(function () {
 $(document)
     .on('click', '.js_mobile_menu_open_button', function () { wideMenu.showHideMobile() })
     .on('click', '.js_close_mobile_menu', function () { wideMenu.showHideMobile() })
-    .on('click', '.js_buy', function () { aviasales.showPopup(true, this) })
-    .on('click', '.js_close-popup', function () { aviasales.showPopup(false) })
-    .on('click', '.js_overlay', function () { aviasales.showPopup(false) })
-    .on('click', '.js_send', function () { aviasales.sendOrder(); });
+    .on('click', '.js_buy', function () { happyNewYear.showPopup(true, this) })
+    .on('click', '.js_close-popup', function () { happyNewYear.showPopup(false) })
+    .on('click', '.js_overlay', function () { happyNewYear.showPopup(false) })
+    .on('click', '.js_send', function () { happyNewYear.sendOrder(); });

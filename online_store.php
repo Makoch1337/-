@@ -68,7 +68,7 @@
             <div class="places">
                 <div class="pictures">
                     <? foreach ($products as $product) : ?>
-                        <div class="places_images" data-id="<?= $product['id'] ?>">
+                        <div class="places_images product-parent" data-id="<?= $product['id'] ?>">
                             <div class="under-picture-txt">
                                 <img src="static/images/placeholder.svg" alt="" class="placehholder">
                                 <h4><?= $product['name'] ?></h4>
@@ -78,7 +78,7 @@
                                 королевским дворцом династии Чосон. </p>
                             <div class="css-modal-details">
                                 <details>
-                                    <summary>Купить</summary>
+                                    <summary class="js_buy js_overlay">Купить</summary>
                                     <div class="cmc">
                                         <div class="cmt">
                                             <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>

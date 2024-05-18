@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="search_avia">
+    <div class="search_avia" id="search_avia">
         <div class="container">
             <div class="header_menu">
                 <div class="logo">
@@ -24,47 +24,71 @@
                     <p class="logo__txt">HiKorea</p>
                 </div>
                 <div class="lk">
-                    <img src="static/images/lk_logo.svg" alt="LkLogo">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#where_to_go">Что посетить</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#prepare_to_fly">Подготовка</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="images__2">
             </div>
             <div>
                 <ul class="stroke_search">
-                    <!-- <img src="/images/plane.svg" alt="" class="images__2"> -->
-                    <li class="kuda">
-                        <div class="search_form">
-                            <input type="text" name="" class="search-form__txt search_form-shape1" placeholder="">
-                        </div>
-                    </li>
-                    <li class="otkuda">
-                        <div class="search_form">
-                            <input type="text" name="" class="search-form__txt" placeholder="">
-                        </div>
-                    </li>
-                    <li class="kogda">
-                        <div class="search_form">
-                            <input type="text" name="" class="search-form__txt" placeholder="">
-                        </div>
-                    </li>
-                    <li class="obratno">
-                        <div class="search_form">
-                            <input type="text" name="" class="search-form__txt" placeholder="">
-                        </div>
-                    </li>
-                    <li class="kol-vo_chelovek">
-                        <div class="search_form">
-                            <input type="text" name="" class="search-form__txt search_form-shape2" placeholder="">
-                        </div>
-                    </li>
-                    <li class="button_search">
+                    <div id="search">
+                        <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="bar" />
+
+                            <g class="magnifier">
+                                <circle class="glass" />
+                                <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+                            </g>
+
+                            <g class="sparks">
+                                <circle class="spark" />
+                                <circle class="spark" />
+                                <circle class="spark" />
+                            </g>
+
+                            <g class="burst pattern-one">
+                                <circle class="particle circle" />
+                                <path class="particle triangle" />
+                                <circle class="particle circle" />
+                                <path class="particle plus" />
+                                <rect class="particle rect" />
+                                <path class="particle triangle" />
+                            </g>
+                            <g class="burst pattern-two">
+                                <path class="particle plus" />
+                                <circle class="particle circle" />
+                                <path class="particle triangle" />
+                                <rect class="particle rect" />
+                                <circle class="particle circle" />
+                                <path class="particle plus" />
+                            </g>
+                            <g class="burst pattern-three">
+                                <circle class="particle circle" />
+                                <rect class="particle rect" />
+                                <path class="particle plus" />
+                                <path class="particle triangle" />
+                                <rect class="particle rect" />
+                                <path class="particle plus" />
+                            </g>
+                        </svg>
+                        <input type=search name=q aria-label="Search for inspiration" />
+                    </div>
+
+                    <div id="results">
+
+                    </div>
+                    <!-- <li class="button_search">
                         <button type="button" class="button">Найти билеты</button>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
-    <div class="where_to_go">
+    <div class="where_to_go" id="where_to_go">
         <div class="container">
             <div class="main_txt">
                 <h2 class="main_txt">Что посетить?</h2>
@@ -78,15 +102,14 @@
                                 <h4><?= $product['name'] ?></h4>
                             </div>
                             <img src="<?= $product['image'] ?>" alt="Image">
-                            <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун , был главным
-                                королевским дворцом династии Чосон. </p>
-                            <button class="js_buy">Купить</button>
+                            <p class="image__txt"><?= $product['description'] ?></p>
+                            <a id="button-1" class="button js_buy">Let's Go!<img id="arrow-hover" src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-paper-plane-1-120.png?raw=true" /></a>
                         </div>
                     <? endforeach ?>
                 </div>
             </div>
         </div>
-        <div class="prepare_to_fly">
+        <div class="prepare_to_fly" id="prepare_to_fly">
             <div class="container">
                 <div>
                     <h2 class="logo__txt logo__prepare_to_fly">Подготовка к полёту</h2>
@@ -107,19 +130,36 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="container">
-                <div class="contacts">
-                    <p>vk</p>
-                    <p>yt</p>
-                    <p>tt</p>
-                    <p>tg</p>
-                    <p>x</p>
-                    <p>yz</p>
-                    <p>viber</p>
-                    <p>whatsapp</p>
-                </div>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
             </div>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu" id="contacts">
+                <li class="menu__item"><a class="menu__link" href="#search_avia">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#where_to_go">Что посетить</a></li>
+                <li class="menu__item"><a class="menu__link" href="#prepare_to_fly">Подготовка</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
+            </ul>
+            <p>&copy;2024 your fio | All Rights Reserved</p>
         </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <div class="overlay js_overlay"></div>
         <div class="popup">
             <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>

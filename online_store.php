@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/static/js/jquery-3.4.1.min.js"></script>
-    <script src="/static/js/slick.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/slick.js"></script>
     <script src="static/js/script.js"></script>
-    <link rel="stylesheet" href="static/style.css">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="static/style.css" rel="stylesheet" type="text/css">
     <title>HiKorea</title>
 </head>
 
@@ -73,26 +77,10 @@
                                 <img src="static/images/placeholder.svg" alt="" class="placehholder">
                                 <h4><?= $product['name'] ?></h4>
                             </div>
-                            <img src="<?= $product['image'] ?>" alt="First Image">
+                            <img src="<?= $product['image'] ?>" alt="Image">
                             <p class="image__txt">Кёнбоккун, также известный как Дворец Кёнбоккун , был главным
                                 королевским дворцом династии Чосон. </p>
-                            <div class="css-modal-details">
-                                <details>
-                                    <summary class="js_buy js_overlay">Купить</summary>
-                                    <div class="cmc">
-                                        <div class="cmt">
-                                            <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
-                                            <div class='js_error'></div>
-                                            <input type="hidden" name="product-id">
-                                            <input type="text" name="fio" placeholder="Ваше имя">
-                                            <input type="text" name="phone" placeholder="Телефон">
-                                            <input type="text" name="email" placeholder="e-mail">
-                                            <textarea placeholder="Комментарий" name="comment"></textarea>
-                                            <button class="js_send">Отправить</button>
-                                        </div>
-                                    </div>
-                                </details>
-                            </div>
+                            <button class="js_buy">Купить</button>
                         </div>
                     <? endforeach ?>
                 </div>
@@ -132,6 +120,18 @@
                 </div>
             </div>
         </footer>
+        <div class="overlay js_overlay"></div>
+        <div class="popup">
+            <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
+            <div class='js_error'></div>
+            <input type="hidden" name="product-id">
+            <input type="text" name="fio" placeholder="Ваше имя">
+            <input type="text" name="phone" placeholder="Телефон">
+            <input type="text" name="email" placeholder="e-mail">
+            <textarea placeholder="Комментарий" name="comment"></textarea>
+            <button class="js_send">Отправить</button>
+        </div>
+    </div>
 </body>
 
 </html>

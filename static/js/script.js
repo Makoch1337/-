@@ -97,7 +97,7 @@ happyNewYear = {
 
     sendOrder: () => {
 
-        let url = '/index.php',
+        let url = '/ajax.php',
             data = {
                 'id': $('[name=product-id]').val(),
                 'fio': $('[name=fio]').val(),
@@ -110,7 +110,7 @@ happyNewYear = {
             url: url,
             type: "POST",
             data: data,
-            dataType: "json",
+            dataType: 'json',
             success: (response) => {
 
                 let errorsBlock = $('.js_error');

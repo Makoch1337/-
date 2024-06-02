@@ -35,13 +35,15 @@ html {
 .search_avia {
     background: url(images/background_plane.jpg);
     align-items: center;
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     height: 800px;
+    background-repeat: no-repeat;
 }
 
 .stroke_search {
     background-image: url(/static/images/plane.svg);
     height: 700px;
+    background-repeat: no-repeat;
 }
 
 .menu__top {
@@ -692,10 +694,10 @@ h4 {
 
 .popup {
     position: fixed;
-    width: 600px;
+    width: 1000px;
     left: 50%;
     margin-left: -300px;
-    height: 500px;
+    height: 900px;
     top: 50%;
     margin-top: -250px;
     z-index: 1000;
@@ -733,7 +735,6 @@ h4 {
 .popup textarea {
     margin-top: 20px;
     border: none;
-    width: 100%;
     border-bottom: 1px solid #666;
     border-left: 1px solid #666;
     padding: 10px;

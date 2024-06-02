@@ -165,7 +165,10 @@
             <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
             <div class='js_error'></div>
             <input type="hidden" name="product-id">
-            <input type="text" name="fio" placeholder="Ваше имя">
+            <input type="text" name="fio" placeholder="Серия и № паспорта">
+            <input type="text" name="fio" placeholder="Имя">
+            <input type="text" name="fio" placeholder="Фамилия">
+            <input type="text" name="fio" placeholder="Дата рождения">
             <input type="text" name="phone" placeholder="Телефон">
             <input type="text" name="email" placeholder="e-mail">
             <textarea placeholder="Комментарий" name="comment"></textarea>

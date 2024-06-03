@@ -116,9 +116,8 @@
                 </div>
                 <div class="reminders">
                     <div class="first_reminder">
-                        <p class="reminders__txt__logo"> Возврат и обмен билетов</p>
-                        <p class="reminders__txt">Размеры, стоимость и правила перевозки ручной клади и багажа, подробная
-                            информация о перевесе багажа</p>
+                        <p class="reminders__txt__logo"> Регистрация на рейс</p>
+                        <p class="reminders__txt">Зарегистрироваться на рейс можно в аэропорту ил ипо телефону</p>
                     </div>
                     <div class="second_reminder">
                         <p class="reminders__txt__logo"> Ручная кладь и багаж </p>
@@ -165,13 +164,15 @@
             <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
             <div class='js_error'></div>
             <input type="hidden" name="product-id">
-            <input type="text" name="fio" placeholder="Серия и № паспорта">
-            <input type="text" name="fio" placeholder="Имя">
-            <input type="text" name="fio" placeholder="Фамилия">
-            <input type="text" name="fio" placeholder="Дата рождения">
+            <input type="text" name="pass" placeholder="Серия и № паспорта">
+            <input type="text" name="fio" placeholder="Имя и Фамилия">
+            <input type="text" name="birthday" placeholder="Дата рождения">
             <input type="text" name="phone" placeholder="Телефон">
             <input type="text" name="email" placeholder="e-mail">
+            <input type="text" name="place" placeholder="Место">
+            <input type="checkbox" name="bag" placeholder="Багаж">
             <textarea placeholder="Комментарий" name="comment"></textarea>
+            <img src="/static/images/places.jpg" alt="image_places" class="places_image">
             <button class="js_send">Отправить</button>
         </div>
     </div>

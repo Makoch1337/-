@@ -35,9 +35,9 @@ html {
 .search_avia {
     background: url(images/background_plane.jpg);
     align-items: center;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: multiply;
     height: 800px;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .stroke_search {
@@ -660,11 +660,19 @@ h4 {
     background: rgba(175, 218, 243, 0.55);
 }
 
+.first_reminder:hover {
+    border: 1px solid white
+}
+
 .second_reminder {
     border-radius: 71px;
     width: 507px;
     height: 272px;
     background: rgba(175, 218, 243, 0.55);
+}
+
+.second_reminder:hover {
+    border: 1px solid white
 }
 
 .third_reminder {}
@@ -694,11 +702,11 @@ h4 {
 
 .popup {
     position: fixed;
-    width: 1000px;
+    width: 600px;
     left: 50%;
     margin-left: -300px;
-    height: 900px;
-    top: 50%;
+    height: 1000px;
+    top: 30%;
     margin-top: -250px;
     z-index: 1000;
     display: none;
@@ -951,4 +959,9 @@ a#button-1:hover img {
     width: 15px;
     opacity: 1;
     transform: translateX(50px);
+}
+
+.places_image {
+    padding-top: 30px;
+    width: 100%;
 }

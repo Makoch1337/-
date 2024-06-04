@@ -104,6 +104,9 @@ aviasales = {
                 'phone': $('[name=phone]').val(),
                 'email': $('[name=email]').val(),
                 'comment': $('[name=comment]').val(),
+                'passport': $('[name=passport]').val(),
+                'place': $('[name=place]').val(),
+                'bag': $('[name=bag]').val(),
             };
 
         $.ajax({

@@ -22,6 +22,9 @@ if (
     if (!$requestData['phone'] && !$requestData['email'])
         $errors[] = 'Вы должны заполнить как минимум одно поле "Телефон" или "Email"';
 
+    if (!$requestData['passport'])
+        $errors[] = 'Вы не заполнили паспорт"';
+
     $response = array();
 
     if ($errors) {
@@ -29,7 +32,7 @@ if (
     } else {
         $PDO = PdoConnect::getInstance();
 
-        $sql = "INSERT INTO `orders` SET `fio` = :fio, `phone` = :phone, `email` = :email, `comment` = :comment, `product_id` = :id";
+        $sql = "INSERT INTO `orders` SET `fio` = :fio, `phone` = :phone, `email` = :email, `comment` = :comment, `product_id` = :id, `passport` = :passport, `place` = :place, `bag` = :bag";
 
         $set = $PDO->PDO->prepare($sql);
         $response['res'] = $set->execute($requestData);

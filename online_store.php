@@ -117,7 +117,7 @@
                 <div class="reminders">
                     <div class="first_reminder">
                         <p class="reminders__txt__logo"> Регистрация на рейс</p>
-                        <p class="reminders__txt">Зарегистрироваться на рейс можно в аэропорту ил ипо телефону</p>
+                        <p class="reminders__txt">Зарегистрироваться на рейс можно в аэропорту или по телефону</p>
                     </div>
                     <div class="second_reminder">
                         <p class="reminders__txt__logo"> Ручная кладь и багаж </p>
@@ -155,7 +155,7 @@
                 <li class="menu__item"><a class="menu__link" href="#prepare_to_fly">Подготовка</a></li>
                 <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li>
             </ul>
-            <p>&copy;2024 your fio | All Rights Reserved</p>
+            <p>&copy;2024 4IS-20Р | Артемьева Марина Александровна | All Rights Reserved</p>
         </footer>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -164,13 +164,13 @@
             <h3>Оформление заказа</h3><i class="fas fa-times close-popup js_close-popup"></i>
             <div class='js_error'></div>
             <input type="hidden" name="product-id">
-            <input type="text" name="pass" placeholder="Серия и № паспорта">
             <input type="text" name="fio" placeholder="Имя и Фамилия">
             <input type="text" name="birthday" placeholder="Дата рождения">
             <input type="text" name="phone" placeholder="Телефон">
             <input type="text" name="email" placeholder="e-mail">
+            <input type="text" name="passport" placeholder="Серия и № паспорта">
             <input type="text" name="place" placeholder="Место">
-            <input type="checkbox" name="bag" placeholder="Багаж">
+            <input type="text" name="bag" placeholder="Багаж">
             <textarea placeholder="Комментарий" name="comment"></textarea>
             <img src="/static/images/places.jpg" alt="image_places" class="places_image">
             <button class="js_send">Отправить</button>

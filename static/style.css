@@ -706,12 +706,13 @@ h4 {
     left: 50%;
     margin-left: -300px;
     height: 1000px;
-    top: 30%;
-    margin-top: -250px;
+    top: 35%;
+    margin-top: -350px;
     z-index: 1000;
     display: none;
     background: #fff;
     padding: 20px;
+    overflow: scroll;
 }
 
 /* Форма оформления заказа */

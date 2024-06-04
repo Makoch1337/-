@@ -32,7 +32,7 @@ if (
     } else {
         $PDO = PdoConnect::getInstance();
 
-        $sql = "INSERT INTO `orders` SET `fio` = :fio, `phone` = :phone, `email` = :email, `comment` = :comment, `product_id` = :id, `passport` = :passport, `place` = :place, `bag` = :bag";
+        $sql = "INSERT INTO `orders` SET `fio` = :fio, `phone` = :phone, `email` = :email, `comment` = :comment, `product_id` = :id, `passport` = :passport, `place` = :place, `bag` = :bag, `frome` = :frome";
 
         $set = $PDO->PDO->prepare($sql);
         $response['res'] = $set->execute($requestData);

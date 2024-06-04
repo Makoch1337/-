@@ -75,7 +75,10 @@
                                 <path class="particle plus" />
                             </g>
                         </svg>
-                        <input type=search name=q aria-label="Search for inspiration" />
+                        <form method="post" action="search.php" class="stroke_searched">
+                            <input type="text" name="search" placeholder="Введите название" class="stroke_searched_stroke">
+                            <input type="submit" value="Search" class="stroke_searched_button">
+                        </form>
                     </div>
 
                     <div id="results">
@@ -137,13 +140,10 @@
             </div>
             <ul class="social-icon">
                 <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-tg"></ion-icon>
                     </a></li>
                 <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></li>
-                <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-vk"></ion-icon>
                     </a></li>
                 <li class="social-icon__item"><a class="social-icon__link" href="#">
                         <ion-icon name="logo-instagram"></ion-icon>
@@ -171,11 +171,41 @@
             <input type="text" name="passport" placeholder="Серия и № паспорта">
             <input type="text" name="place" placeholder="Место">
             <input type="text" name="bag" placeholder="Багаж">
+            <input type="text" name="frome" placeholder="Откуда">
             <textarea placeholder="Комментарий" name="comment"></textarea>
             <img src="/static/images/places.jpg" alt="image_places" class="places_image">
             <button class="js_send">Отправить</button>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#live_search").keyup(function() {
+                var query = $(this).val();
+                if (query != "") {
+                    $.ajax({
+                        url: 'ajax-live-search.php',
+                        method: 'POST',
+                        data: {
+                            query: query
+                        },
+                        success: function(data) {
+                            $('#search_result').html(data);
+                            $('#search_result').css('display', 'block');
+                            $("#live_search").focusout(function() {
+                                $('#search_result').css('display', 'none');
+                            });
+                            $("#live_search").focusin(function() {
+                                $('#search_result').css('display', 'block');
+                            });
+                        }
+                    });
+                } else {
+                    $('#search_result').css('display', 'none');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
